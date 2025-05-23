@@ -16,7 +16,7 @@ def calculate_score(cards):
 
     while 11 in cards and sum(cards) > 21:
         cards.remove(11)
-        cards.apppend(1)
+        cards.append(1)
 
     return sum(cards)
 
@@ -66,7 +66,7 @@ def play_game():
             if user_should_deal == "y":
                 user_card.append(deal_card())
             else:
-                is_game_over = False
+                is_game_over = True
 
     while computer_score != 0 and computer_score <17:
         computer_card.append(deal_card())
